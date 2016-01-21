@@ -20,7 +20,7 @@ def parsefile(fname,ofile):
 	datetime_pattern = re.compile('([0-9]{4}\-[0-9]{2}\-[0-9]{2}\T[0-9]{2}\:[0-9]{2}:[0-9]{2}\.[0-9]{3})([\-\+][0-9]{4})')
 	conn_action_pattern = re.compile('\[(.{1,13})\] (\w{1,15})')
 	initandlisten_pattern = re.compile(' \#.{1,10} \(')
-	dbname_tablename_pattern = re.compile('(spedse|calstrs)\.(\w{1,20}) ')
+	dbname_tablename_pattern = re.compile('(tmp_db1|tmp_db2)\.(\w{1,20}) ')
 	query_pattern = re.compile(': (\{.{1,10000}\}) ')
 	#action_pattern = re.compile('\] \w{1,15}')
 
