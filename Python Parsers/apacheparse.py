@@ -22,7 +22,7 @@ def parsefile(fname,ofile):
 
 	tmp_lcount = 0
 	for line in open(fname,'r'):
-		if line[0] <> "#":
+		if line[0] != "#":
 			output_line = []
 			# Prefill the value of each field before starting loop
 			finaldate = "-"
